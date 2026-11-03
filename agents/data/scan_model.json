@@ -1,0 +1,1035 @@
+{
+ "generated_by": "agents/tools/export_scan.mjs (HUKUM Scan pipeline, all samples)",
+ "site": {
+  "lat": 12.93385,
+  "lon": 77.69275,
+  "name": "New Horizon College of Engineering",
+  "headingDeg": 17
+ },
+ "model": {
+  "site": {
+   "name": "New Horizon College of Engineering",
+   "lat": 12.93385,
+   "lon": 77.69275
+  },
+  "building": {
+   "id": "MB",
+   "name": "Main Block",
+   "floors": 3,
+   "footprintM2": 1532.6,
+   "heightM": 11.6,
+   "roofKWp": 180.8,
+   "yearlySolarKWh": 260126
+  },
+  "floors": [
+   "MB-1",
+   "MB-2",
+   "MB-G"
+  ],
+  "rooms": [
+   {
+    "id": "CSE-101",
+    "floor": "MB-1",
+    "name": "CSE Classroom 101",
+    "area": 100,
+    "seats": 52,
+    "lights": 9,
+    "peak": 54,
+    "confidence": 0.984,
+    "sources": [
+     "dxf",
+     "roomplan",
+     "cctv",
+     "wifi",
+     "timetable"
+    ],
+    "status": "accepted",
+    "type": "classroom"
+   },
+   {
+    "id": "CSE-102",
+    "floor": "MB-1",
+    "name": "CSE Classroom 102",
+    "area": 100,
+    "seats": 55,
+    "lights": 9,
+    "peak": 59,
+    "confidence": 0.984,
+    "sources": [
+     "dxf",
+     "roomplan",
+     "cctv",
+     "wifi",
+     "timetable"
+    ],
+    "status": "accepted",
+    "type": "classroom"
+   },
+   {
+    "id": "CSE-103",
+    "floor": "MB-1",
+    "name": "CSE Classroom 103",
+    "area": 100,
+    "seats": 54,
+    "lights": 9,
+    "peak": 55,
+    "confidence": 0.984,
+    "sources": [
+     "dxf",
+     "roomplan",
+     "cctv",
+     "wifi",
+     "timetable"
+    ],
+    "status": "accepted",
+    "type": "classroom"
+   },
+   {
+    "id": "CSE-104",
+    "floor": "MB-1",
+    "name": "CSE Classroom 104",
+    "area": 100,
+    "seats": null,
+    "lights": 9,
+    "peak": 48,
+    "confidence": 0.8,
+    "sources": [
+     "dxf",
+     "cctv",
+     "wifi",
+     "timetable"
+    ],
+    "status": "accepted",
+    "type": "classroom"
+   },
+   {
+    "id": "CSE-LAB1",
+    "floor": "MB-1",
+    "name": "CSE Programming Lab",
+    "area": 100,
+    "seats": 38,
+    "lights": 9,
+    "peak": 33,
+    "confidence": 0.984,
+    "sources": [
+     "dxf",
+     "roomplan",
+     "cctv",
+     "wifi",
+     "timetable"
+    ],
+    "status": "accepted",
+    "type": "lab"
+   },
+   {
+    "id": "CSE-LAB2",
+    "floor": "MB-1",
+    "name": "CSE Systems Lab",
+    "area": 100,
+    "seats": 38,
+    "lights": 9,
+    "peak": 0,
+    "confidence": 0.984,
+    "sources": [
+     "dxf",
+     "roomplan",
+     "cctv",
+     "timetable"
+    ],
+    "status": "accepted",
+    "type": "lab"
+   },
+   {
+    "id": "CSE-105",
+    "floor": "MB-1",
+    "name": "CSE Classroom 105",
+    "area": 100,
+    "seats": null,
+    "lights": 9,
+    "peak": 42,
+    "confidence": 0.8,
+    "sources": [
+     "dxf",
+     "cctv",
+     "wifi",
+     "timetable"
+    ],
+    "status": "accepted",
+    "type": "classroom"
+   },
+   {
+    "id": "CSE-DEPT",
+    "floor": "MB-1",
+    "name": "CSE Department & HoD",
+    "area": 60,
+    "seats": 12,
+    "lights": 6,
+    "peak": 10,
+    "confidence": 0.984,
+    "sources": [
+     "dxf",
+     "roomplan",
+     "cctv",
+     "wifi"
+    ],
+    "status": "accepted",
+    "type": "office"
+   },
+   {
+    "id": "RISER-MB-1",
+    "floor": "MB-1",
+    "name": "Electrical Riser MB-1",
+    "area": 60,
+    "seats": null,
+    "lights": 6,
+    "peak": null,
+    "confidence": 0.8,
+    "sources": [
+     "dxf"
+    ],
+    "status": "accepted",
+    "type": "electrical"
+   },
+   {
+    "id": "ISE-201",
+    "floor": "MB-2",
+    "name": "ISE Classroom 201",
+    "area": 100,
+    "seats": null,
+    "lights": null,
+    "peak": null,
+    "confidence": 0.85,
+    "sources": [
+     "ifc"
+    ],
+    "status": "accepted",
+    "type": "classroom"
+   },
+   {
+    "id": "ISE-202",
+    "floor": "MB-2",
+    "name": "ISE Classroom 202",
+    "area": 100,
+    "seats": null,
+    "lights": null,
+    "peak": null,
+    "confidence": 0.85,
+    "sources": [
+     "ifc"
+    ],
+    "status": "accepted",
+    "type": "classroom"
+   },
+   {
+    "id": "AIML-203",
+    "floor": "MB-2",
+    "name": "AI & ML Classroom 203",
+    "area": 100,
+    "seats": null,
+    "lights": null,
+    "peak": null,
+    "confidence": 0.85,
+    "sources": [
+     "ifc"
+    ],
+    "status": "accepted",
+    "type": "classroom"
+   },
+   {
+    "id": "AIML-204",
+    "floor": "MB-2",
+    "name": "AI & ML Classroom 204",
+    "area": 100,
+    "seats": null,
+    "lights": null,
+    "peak": null,
+    "confidence": 0.85,
+    "sources": [
+     "ifc"
+    ],
+    "status": "accepted",
+    "type": "classroom"
+   },
+   {
+    "id": "AIML-LAB",
+    "floor": "MB-2",
+    "name": "AI & ML Lab (GPU)",
+    "area": 100,
+    "seats": null,
+    "lights": null,
+    "peak": null,
+    "confidence": 0.85,
+    "sources": [
+     "ifc"
+    ],
+    "status": "accepted",
+    "type": "lab"
+   },
+   {
+    "id": "ISE-LAB",
+    "floor": "MB-2",
+    "name": "ISE Lab",
+    "area": 100,
+    "seats": null,
+    "lights": null,
+    "peak": null,
+    "confidence": 0.85,
+    "sources": [
+     "ifc"
+    ],
+    "status": "accepted",
+    "type": "lab"
+   },
+   {
+    "id": "MB-VC",
+    "floor": "MB-2",
+    "name": "Video Conference Hall",
+    "area": 210,
+    "seats": null,
+    "lights": null,
+    "peak": null,
+    "confidence": 0.85,
+    "sources": [
+     "ifc"
+    ],
+    "status": "accepted",
+    "type": "seminar"
+   },
+   {
+    "id": "RISER-MB-2",
+    "floor": "MB-2",
+    "name": "Electrical Riser MB-2",
+    "area": 60,
+    "seats": null,
+    "lights": null,
+    "peak": null,
+    "confidence": 0.85,
+    "sources": [
+     "ifc"
+    ],
+    "status": "accepted",
+    "type": "electrical"
+   },
+   {
+    "id": "MB-LOBBY",
+    "floor": "MB-G",
+    "name": null,
+    "area": 103.4,
+    "seats": null,
+    "lights": null,
+    "peak": null,
+    "confidence": 0.85,
+    "sources": [
+     "plan-ocr"
+    ],
+    "status": "accepted",
+    "type": "lobby"
+   },
+   {
+    "id": "MB-ADMIN",
+    "floor": "MB-G",
+    "name": null,
+    "area": 97.8,
+    "seats": null,
+    "lights": null,
+    "peak": null,
+    "confidence": 0.85,
+    "sources": [
+     "plan-ocr"
+    ],
+    "status": "accepted",
+    "type": "office"
+   },
+   {
+    "id": "MB-LIB",
+    "floor": "MB-G",
+    "name": null,
+    "area": 213,
+    "seats": null,
+    "lights": null,
+    "peak": null,
+    "confidence": 0.87,
+    "sources": [
+     "plan-ocr"
+    ],
+    "status": "accepted",
+    "type": "library"
+   },
+   {
+    "id": "MB-CCTV",
+    "floor": "MB-G",
+    "name": null,
+    "area": 101.9,
+    "seats": null,
+    "lights": null,
+    "peak": null,
+    "confidence": 0.85,
+    "sources": [
+     "plan-ocr"
+    ],
+    "status": "accepted",
+    "type": "security"
+   },
+   {
+    "id": "MB-SERVER",
+    "floor": "MB-G",
+    "name": null,
+    "area": 105.8,
+    "seats": null,
+    "lights": null,
+    "peak": null,
+    "confidence": 0.86,
+    "sources": [
+     "plan-ocr"
+    ],
+    "status": "accepted",
+    "type": "server"
+   },
+   {
+    "id": "MB-CONF",
+    "floor": "MB-G",
+    "name": null,
+    "area": 100,
+    "seats": null,
+    "lights": null,
+    "peak": null,
+    "confidence": 0.78,
+    "sources": [
+     "plan-ocr"
+    ],
+    "status": "accepted",
+    "type": "seminar"
+   }
+  ],
+  "circuits": [
+   {
+    "id": "DB-MB-1/C1",
+    "panel": "DB-MB-1",
+    "breaker": "C1",
+    "room": "CSE-101",
+    "confidence": 0.95,
+    "status": "accepted",
+    "sources": [
+     "dxf",
+     "sld-ocr"
+    ]
+   },
+   {
+    "id": "DB-MB-1/C2",
+    "panel": "DB-MB-1",
+    "breaker": "C2",
+    "room": "CSE-101",
+    "confidence": 0.95,
+    "status": "accepted",
+    "sources": [
+     "dxf",
+     "sld-ocr"
+    ]
+   },
+   {
+    "id": "DB-MB-1/C3",
+    "panel": "DB-MB-1",
+    "breaker": "C3",
+    "room": "CSE-102",
+    "confidence": 0.95,
+    "status": "accepted",
+    "sources": [
+     "dxf",
+     "sld-ocr"
+    ]
+   },
+   {
+    "id": "DB-MB-1/C4",
+    "panel": "DB-MB-1",
+    "breaker": "C4",
+    "room": "CSE-102",
+    "confidence": 0.95,
+    "status": "accepted",
+    "sources": [
+     "dxf",
+     "sld-ocr"
+    ]
+   },
+   {
+    "id": "DB-MB-1/C5",
+    "panel": "DB-MB-1",
+    "breaker": "C5",
+    "room": "CSE-103",
+    "confidence": 0.95,
+    "status": "accepted",
+    "sources": [
+     "dxf",
+     "sld-ocr"
+    ]
+   },
+   {
+    "id": "DB-MB-1/C6",
+    "panel": "DB-MB-1",
+    "breaker": "C6",
+    "room": "CSE-103",
+    "confidence": 0.8,
+    "status": "conflict",
+    "sources": [
+     "sld-ocr"
+    ]
+   },
+   {
+    "id": "DB-MB-1/C7",
+    "panel": "DB-MB-1",
+    "breaker": "C7",
+    "room": "CSE-104",
+    "confidence": 0.95,
+    "status": "accepted",
+    "sources": [
+     "dxf",
+     "sld-ocr"
+    ]
+   },
+   {
+    "id": "DB-MB-1/C8",
+    "panel": "DB-MB-1",
+    "breaker": "C8",
+    "room": "CSE-104",
+    "confidence": 0.95,
+    "status": "accepted",
+    "sources": [
+     "dxf",
+     "sld-ocr"
+    ]
+   },
+   {
+    "id": "DB-MB-1/C9",
+    "panel": "DB-MB-1",
+    "breaker": "C9",
+    "room": "CSE-LAB1",
+    "confidence": 0.95,
+    "status": "accepted",
+    "sources": [
+     "dxf",
+     "sld-ocr"
+    ]
+   },
+   {
+    "id": "DB-MB-1/C10",
+    "panel": "DB-MB-1",
+    "breaker": "C10",
+    "room": "CSE-LAB1",
+    "confidence": 0.95,
+    "status": "accepted",
+    "sources": [
+     "dxf",
+     "sld-ocr"
+    ]
+   },
+   {
+    "id": "DB-MB-1/C11",
+    "panel": "DB-MB-1",
+    "breaker": "C11",
+    "room": "CSE-LAB1",
+    "confidence": 0.95,
+    "status": "accepted",
+    "sources": [
+     "dxf",
+     "sld-ocr"
+    ]
+   },
+   {
+    "id": "DB-MB-1/C12",
+    "panel": "DB-MB-1",
+    "breaker": "C12",
+    "room": "CSE-LAB2",
+    "confidence": 0.95,
+    "status": "accepted",
+    "sources": [
+     "dxf",
+     "sld-ocr"
+    ]
+   },
+   {
+    "id": "DB-MB-1/C13",
+    "panel": "DB-MB-1",
+    "breaker": "C13",
+    "room": "CSE-LAB2",
+    "confidence": 0.95,
+    "status": "accepted",
+    "sources": [
+     "dxf",
+     "sld-ocr"
+    ]
+   },
+   {
+    "id": "DB-MB-1/C14",
+    "panel": "DB-MB-1",
+    "breaker": "C14",
+    "room": "CSE-LAB2",
+    "confidence": 0.95,
+    "status": "accepted",
+    "sources": [
+     "dxf",
+     "sld-ocr"
+    ]
+   },
+   {
+    "id": "DB-MB-1/C15",
+    "panel": "DB-MB-1",
+    "breaker": "C15",
+    "room": "CSE-105",
+    "confidence": 0.95,
+    "status": "accepted",
+    "sources": [
+     "dxf",
+     "sld-ocr"
+    ]
+   },
+   {
+    "id": "DB-MB-1/C16",
+    "panel": "DB-MB-1",
+    "breaker": "C16",
+    "room": "CSE-105",
+    "confidence": 0.95,
+    "status": "accepted",
+    "sources": [
+     "dxf",
+     "sld-ocr"
+    ]
+   },
+   {
+    "id": "DB-MB-1/C17",
+    "panel": "DB-MB-1",
+    "breaker": "C17",
+    "room": "CSE-DEPT",
+    "confidence": 0.95,
+    "status": "accepted",
+    "sources": [
+     "dxf",
+     "sld-ocr"
+    ]
+   },
+   {
+    "id": "DB-MB-1/C18",
+    "panel": "DB-MB-1",
+    "breaker": "C18",
+    "room": "CSE-DEPT",
+    "confidence": 0.95,
+    "status": "accepted",
+    "sources": [
+     "dxf",
+     "sld-ocr"
+    ]
+   },
+   {
+    "id": "DB-MB-1/C19",
+    "panel": "DB-MB-1",
+    "breaker": "C19",
+    "room": "CSE-DEPT",
+    "confidence": 0.95,
+    "status": "accepted",
+    "sources": [
+     "dxf",
+     "sld-ocr"
+    ]
+   }
+  ],
+  "equipment": [
+   {
+    "id": "PUMP-1",
+    "kind": "pump",
+    "ratedKW": 15,
+    "runningKW": null,
+    "capacityKWh": null,
+    "model": "KDS-2040+",
+    "make": "KIRLOSKAR BROTHERS LIMITED",
+    "room": "MB-PUMP",
+    "confidence": 0.95
+   },
+   {
+    "id": "PUMP-2",
+    "kind": "pump",
+    "ratedKW": 15,
+    "runningKW": null,
+    "capacityKWh": null,
+    "model": "KDS-2040+",
+    "make": "KIRLOSKAR BROTHERS LIMITED",
+    "room": "MB-PUMP",
+    "confidence": 0.95
+   },
+   {
+    "id": "AHU-A",
+    "kind": "chiller",
+    "ratedKW": 120,
+    "runningKW": null,
+    "capacityKWh": null,
+    "model": "BS-ACS-120R",
+    "make": "BLUE STAR LTD",
+    "room": "MB-AHU",
+    "confidence": 0.95
+   },
+   {
+    "id": "BAT-1",
+    "kind": "battery",
+    "ratedKW": 150,
+    "runningKW": null,
+    "capacityKWh": 400,
+    "model": "ELB-400",
+    "make": "EXICOM",
+    "room": "MB-ELEC",
+    "confidence": 0.95
+   }
+  ],
+  "cameras": [
+   {
+    "id": "CAM-CSE-101",
+    "room": "CSE-101",
+    "confidence": 0.9
+   },
+   {
+    "id": "CAM-CSE-102",
+    "room": "CSE-102",
+    "confidence": 0.9
+   },
+   {
+    "id": "CAM-CSE-103",
+    "room": "CSE-103",
+    "confidence": 0.9
+   },
+   {
+    "id": "CAM-CSE-104",
+    "room": "CSE-104",
+    "confidence": 0.9
+   },
+   {
+    "id": "CAM-CSE-LAB1",
+    "room": "CSE-LAB1",
+    "confidence": 0.9
+   },
+   {
+    "id": "CAM-CSE-LAB2",
+    "room": "CSE-LAB2",
+    "confidence": 0.82
+   },
+   {
+    "id": "CAM-CSE-105",
+    "room": "CSE-105",
+    "confidence": 0.9
+   },
+   {
+    "id": "CAM-CSE-DEPT",
+    "room": "CSE-DEPT",
+    "confidence": 0.9
+   }
+  ],
+  "openQuestions": [
+   {
+    "key": "fact:DB-MB-1/C6|feeds",
+    "title": "Which room does circuit DB-MB-1/C6 feed?"
+   },
+   {
+    "key": "fact:CSE-STORE|exists",
+    "title": "Does CSE-STORE still exist?"
+   },
+   {
+    "key": "fact:MB-CONF|label",
+    "title": "OCR label: is this room MB-CONF?"
+   },
+   {
+    "key": "fact:CSE-LAB2|peak_occupancy",
+    "title": "How many people use CSE-LAB2 at peak?"
+   },
+   {
+    "key": "fact:CSE-106|exists",
+    "title": "Is CSE-106 a real room?"
+   },
+   {
+    "key": "nilm:NILM-2",
+    "title": "Nameplate says 15 kW, the meter sees 8.25 kW"
+   }
+  ]
+ },
+ "roof_plant": [
+  {
+   "id": "MB-PUMP",
+   "name": "Pump House",
+   "w_m": 10,
+   "h_m": 10,
+   "area_m2": 100
+  },
+  {
+   "id": "MB-AHU",
+   "name": "Chiller / AHU Plant",
+   "w_m": 10,
+   "h_m": 10,
+   "area_m2": 100
+  }
+ ],
+ "solar": {
+  "segments": [
+   {
+    "index": 0,
+    "pitch_deg": 3.1,
+    "azimuth_deg": 197,
+    "area_m2": 1504.2,
+    "sunshine_hours": 1460
+   },
+   {
+    "index": 1,
+    "pitch_deg": 2.4,
+    "azimuth_deg": 17,
+    "area_m2": 24.3,
+    "sunshine_hours": 1358
+   }
+  ],
+  "roofArea": 1530.5,
+  "maxPanels": 452,
+  "panelWatts": 400,
+  "maxKWp": 180.8,
+  "yearlyDcKWh": 306031,
+  "sunshineHours": 1798.6,
+  "quality": "HIGH",
+  "imageryDate": "2024-02"
+ },
+ "pvwatts": {
+  "kwp": 180.8,
+  "yearly": 275385,
+  "pr": 0.78,
+  "ghi": 5.35,
+  "kwpSource": "Solar API panel layout"
+ },
+ "irradiance": {
+  "ghiKWhPerDay": 5.35,
+  "source": "Bengaluru long-term mean (NASA POWER)"
+ },
+ "footprint": {
+  "area_m2": 1532.6,
+  "source": "open-buildings",
+  "height_m": 11.6,
+  "vertices": 6
+ },
+ "osm": {
+  "buildings": 1,
+  "roads": [
+   "Outer Ring Road"
+  ],
+  "campus": "New Horizon College of Engineering"
+ },
+ "align": {
+  "drawing_to_footprint_rms_m": 0.46,
+  "drawing_rotation_deg": 17.31,
+  "drawing_scale": 0.9946,
+  "walkthrough_to_drawing_rms_m": 0.036
+ },
+ "counts": {
+  "dxf_rooms": 10,
+  "ifc_spaces": 8,
+  "plan_rooms": 6,
+  "sld_lines": 19,
+  "roomplan_rooms": 6,
+  "nameplates": 4,
+  "cameras": 8,
+  "nilm_events": 21,
+  "nilm_paired": 7,
+  "wifi_aps": 8,
+  "timetable_sessions": 13,
+  "cross_checks": 1
+ },
+ "summary": {
+  "total": 194,
+  "auto": 189,
+  "human": 0,
+  "open": 6,
+  "autoPct": 97
+ },
+ "review": [
+  {
+   "key": "fact:DB-MB-1/C6|feeds",
+   "kind": "conflict",
+   "title": "Which room does circuit DB-MB-1/C6 feed?",
+   "detail": "Single-line diagram OCR says CSE-103 (80%): SLD line: C6 32A -> CSE-103 AC. CAD blueprint (DXF) says CSE-104 (75%): Tag DB-MB-1/C6 drawn inside CSE-104 on the lighting layout.",
+   "options": [
+    "CSE-103 (Single-line diagram OCR)",
+    "CSE-104 (CAD blueprint (DXF))"
+   ]
+  },
+  {
+   "key": "fact:CSE-STORE|exists",
+   "kind": "conflict",
+   "title": "Does CSE-STORE still exist?",
+   "detail": "Phone walkthrough (RoomPlan) says no (92%): The walkthrough found one open room (100 m2) covering CSE-DEPT and CSE-STORE, with no wall between them. CAD blueprint (DXF) says yes (80%): Closed room boundary on the MB-1 drawing.",
+   "options": [
+    "no (Phone walkthrough (RoomPlan))",
+    "yes (CAD blueprint (DXF))"
+   ]
+  },
+  {
+   "key": "fact:MB-CONF|label",
+   "kind": "low-confidence",
+   "title": "OCR label: is this room MB-CONF?",
+   "detail": "Only Scanned plan + OCR says so, at 55% confidence. OCR read \"MB-C0NF\"; closest id in the campus room register is MB-CONF (1 character changed).",
+   "options": [
+    "Yes, MB-CONF",
+    "No, drop it"
+   ]
+  },
+  {
+   "key": "fact:CSE-LAB2|peak_occupancy",
+   "kind": "conflict",
+   "title": "How many people use CSE-LAB2 at peak?",
+   "detail": "CCTV homography + YOLO says 0 (85%): CAM-CSE-LAB2 counted nobody all day. Wi-Fi AP logs says 33 (60%): Peak Wi-Fi clients / 1.45 devices per person on AP-CSE-LAB2.",
+   "options": [
+    "0 (CCTV homography + YOLO)",
+    "33 (Wi-Fi AP logs)"
+   ]
+  },
+  {
+   "key": "fact:CSE-106|exists",
+   "kind": "low-confidence",
+   "title": "Is CSE-106 a real room?",
+   "detail": "Only Timetable export says so, at 50% confidence. Booked 1 time(s) in the timetable, but no drawing, scan or camera has it; the nearest known room is CSE-105. New room, or a typo?",
+   "options": [
+    "Yes, yes",
+    "No, drop it"
+   ]
+  },
+  {
+   "key": "nilm:NILM-2",
+   "kind": "cross-check",
+   "title": "Nameplate says 15 kW, the meter sees 8.25 kW",
+   "detail": "PUMP-1 and PUMP-2 have identical 15 kW nameplates. NILM on the Main Block meter found a 8.25 kW load (55% of rated) running 2 times, at 06:02, 18:41. One meter cannot tell identical pumps apart. A throttled valve, a worn impeller or a wrong plate are all possible. HUKUM bids flexibility on real draw, so this changes how much it can shift.",
+   "options": [
+    "It is PUMP-1: use 8.25 kW as its real draw",
+    "It is PUMP-2: use 8.25 kW as its real draw",
+    "Not sure: send a technician, keep nameplate"
+   ]
+  }
+ ],
+ "planted": [
+  {
+   "code": "STORE_WALL",
+   "text": "The old blueprint still shows a store room (CSE-STORE) whose wall the phone walkthrough does not find."
+  },
+  {
+   "code": "CIRCUIT_TAG",
+   "text": "One circuit tag on the blueprint sits in a different room than the single-line diagram says."
+  },
+  {
+   "code": "PUMP_DERATED",
+   "text": "A 15 kW pump nameplate, but the block meter only ever sees an 8.25 kW step (impeller trimmed or wrong nameplate)."
+  },
+  {
+   "code": "CAMERA_BLOCKED",
+   "text": "Wi-Fi sees a full lab while the camera counts nobody: the camera is obstructed."
+  },
+  {
+   "code": "GHOST_ROOM",
+   "text": "The timetable books a room that is not in any drawing."
+  },
+  {
+   "code": "OCR_MISREAD",
+   "text": "OCR on the scanned ground-floor plan misread one room label (O/0, I/1)."
+  }
+ ],
+ "source_fact_counts": {
+  "open-buildings": 3,
+  "osm": 3,
+  "solar-api": 9,
+  "irradiance": 1,
+  "dxf": 69,
+  "align": 2,
+  "ifc": 32,
+  "plan-ocr": 19,
+  "sld-ocr": 19,
+  "roomplan": 18,
+  "nameplate": 21,
+  "cctv": 16,
+  "nilm": 7,
+  "wifi": 8,
+  "timetable": 9
+ },
+ "log": [
+  {
+   "stage": 1,
+   "level": "info",
+   "text": "Open Buildings outline: 6 vertices, 1533 m2, height 11.6 m"
+  },
+  {
+   "stage": 1,
+   "level": "info",
+   "text": "OpenStreetMap: 1 building(s), campus \"New Horizon College of Engineering\", 1 road(s)"
+  },
+  {
+   "stage": 1,
+   "level": "info",
+   "text": "Solar API: 2 roof segment(s), up to 452 panels = 181 kWp (HIGH)"
+  },
+  {
+   "stage": 1,
+   "level": "info",
+   "text": "Yield check: 181 kWp x 5.35 kWh/m2/day -> 2,75,385 kWh/yr"
+  },
+  {
+   "stage": 2,
+   "level": "info",
+   "text": "DXF MB-1: units 4 (x0.001), 10 rooms, 19 circuit tags, 78 light fittings"
+  },
+  {
+   "stage": 6,
+   "level": "info",
+   "text": "ICP drawing -> footprint: rotation 17.3 deg, scale 0.995, RMS 0.46 m"
+  },
+  {
+   "stage": 2,
+   "level": "info",
+   "text": "IFC: 8 spaces on Level 2 (MB-2)"
+  },
+  {
+   "stage": 2,
+   "level": "info",
+   "text": "Scanned plan MB-G: 6 rooms recognised, 1 OCR label(s) corrected"
+  },
+  {
+   "stage": 2,
+   "level": "info",
+   "text": "Single-line diagram: 19 circuits read"
+  },
+  {
+   "stage": 6,
+   "level": "info",
+   "text": "ICP walkthrough -> drawing: rotation -61.3 deg, RMS 0.04 m"
+  },
+  {
+   "stage": 3,
+   "level": "info",
+   "text": "RoomPlan: 6 rooms, 24 walls, 386 objects"
+  },
+  {
+   "stage": 3,
+   "level": "info",
+   "text": "Nameplates: 4 photos read (PUMP-1 15 kW, PUMP-2 15 kW, AHU-A 120 kW, BAT-1 150 kW)"
+  },
+  {
+   "stage": 4,
+   "level": "info",
+   "text": "CCTV: 8/8 cameras on MB-1 mapped to the plan, mean floor error 0.32 m"
+  },
+  {
+   "stage": 5,
+   "level": "info",
+   "text": "NILM: 21 step events, 7 on/off pairs, 4 appliance clusters (4 kW x2, 8.25 kW x2, 9.67 kW x1, 14.49 kW x2)"
+  },
+  {
+   "stage": 5,
+   "level": "info",
+   "text": "Wi-Fi: 328 rows across 8 access points"
+  },
+  {
+   "stage": 5,
+   "level": "info",
+   "text": "Timetable: 13 sessions in 8 rooms"
+  },
+  {
+   "stage": 6,
+   "level": "info",
+   "text": "Fused 236 facts into 194 statements: 189 accepted automatically, 6 waiting for a person"
+  }
+ ],
+ "errors": []
+}

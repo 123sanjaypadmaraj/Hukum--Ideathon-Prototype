@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HUKUM NHCE Digital Twin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/world.css">
+  <link rel="stylesheet" href="css/cctv.css">
+  <link rel="stylesheet" href="css/ui.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/minimize.css">
+</head>
+<body>
+  <header id="topbar"></header>
+
+  <main id="layout">
+    <section id="world-wrap">
+      <canvas id="world" tabindex="0" aria-label="Building view. Use arrow keys to walk."></canvas>
+      <div id="world-hud"></div>
+    </section>
+    <aside id="sidebar">
+      <nav id="tabs" role="tablist"></nav>
+      <div id="panels"></div>
+    </aside>
+  </main>
+
+  <div id="modal-root"></div>
+  <div id="toasts" aria-live="polite"></div>
+
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/nav.js"></script>
+  <script type="module" src="js/minimize.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HUKUM Zero Scan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/scan.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/minimize.css">
+</head>
+<body class="scan-page">
+  <header id="sc-top">
+    <div class="sc-brand">
+      <div class="sc-logo" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div>
+        <div class="sc-name">HUKUM <b>Zero Scan</b></div>
+        <div class="sc-tag">Google Solar data, blueprints and a five-minute phone interior scan, fused into one model of the building. It asks a person only about what it isn't sure of.</div>
+      </div>
+    </div>
+    <div class="sc-site">
+      <label>Lat <input id="sc-lat" type="number" step="0.00001"></label>
+      <label>Lon <input id="sc-lon" type="number" step="0.00001"></label>
+    </div>
+    <div class="sc-actions">
+      <button id="sc-test" class="sc-btn primary" type="button" title="Upload every file in test-files/ and run the scan with the live build">Test run</button>
+      <button id="sc-run" class="sc-btn" type="button" title="Run on whatever is loaded on the left">Run scan</button>
+      <button id="sc-samples" class="sc-btn ghost" type="button" title="Load the in-browser samples without running">Load samples</button>
+      <a class="sc-btn ghost" href="twin.html">Open twin</a>
+    </div>
+  </header>
+
+  <main id="sc-layout">
+    <aside id="sc-stages" aria-label="Inputs by stage"></aside>
+
+    <section id="sc-center">
+      <nav id="sc-tabs" role="tablist"></nav>
+      <div id="sc-views"></div>
+    </section>
+
+    <aside id="sc-right">
+      <div id="sc-summary"></div>
+      <h2 class="sc-h">To-do for a person</h2>
+      <div id="sc-review"></div>
+      <h2 class="sc-h">Export</h2>
+      <div id="sc-export"></div>
+      <details id="sc-logwrap" open><summary class="sc-h">Run log</summary><div id="sc-log"></div></details>
+    </aside>
+  </main>
+
+  <script type="module" src="js/scan/app.js"></script>
+  <script type="module" src="js/nav.js"></script>
+  <script type="module" src="js/minimize.js"></script>
+</body>
+</html>

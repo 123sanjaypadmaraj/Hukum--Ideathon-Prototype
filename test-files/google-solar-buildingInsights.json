@@ -1,0 +1,197 @@
+{
+  "name": "buildings/sample-nhce-main-block",
+  "center": {
+    "latitude": 12.93385,
+    "longitude": 77.69275
+  },
+  "imageryDate": {
+    "year": 2024,
+    "month": 2,
+    "day": 11
+  },
+  "imageryProcessedDate": {
+    "year": 2024,
+    "month": 6,
+    "day": 3
+  },
+  "regionCode": "IN",
+  "imageryQuality": "HIGH",
+  "boundingBox": {
+    "sw": {
+      "latitude": 12.933589453972115,
+      "longitude": 77.69244459033106
+    },
+    "ne": {
+      "latitude": 12.93400382959032,
+      "longitude": 77.69298107812622
+    }
+  },
+  "solarPotential": {
+    "maxArrayPanelsCount": 452,
+    "maxArrayAreaMeters2": 887.5,
+    "maxSunshineHoursPerYear": 1798.6,
+    "carbonOffsetFactorKgPerMwh": 708.9,
+    "panelCapacityWatts": 400,
+    "panelHeightMeters": 1.879,
+    "panelWidthMeters": 1.045,
+    "panelLifetimeYears": 20,
+    "wholeRoofStats": {
+      "areaMeters2": 1530.5,
+      "sunshineQuantiles": [
+        1150,
+        1212,
+        1274,
+        1336,
+        1398,
+        1460,
+        1522,
+        1584,
+        1646,
+        1708,
+        1770
+      ],
+      "groundAreaMeters2": 1528.2
+    },
+    "roofSegmentStats": [
+      {
+        "pitchDegrees": 3.1,
+        "azimuthDegrees": 197,
+        "stats": {
+          "areaMeters2": 1504.2,
+          "sunshineQuantiles": [
+            1150,
+            1212,
+            1274,
+            1336,
+            1398,
+            1460,
+            1522,
+            1584,
+            1646,
+            1708,
+            1770
+          ],
+          "groundAreaMeters2": 1501.9988595046877
+        },
+        "center": {
+          "latitude": 12.9337837,
+          "longitude": 77.6927128
+        },
+        "boundingBox": {
+          "sw": {
+            "latitude": 12.933589453972115,
+            "longitude": 77.69244459033106
+          },
+          "ne": {
+            "latitude": 12.93397787596025,
+            "longitude": 77.69298107812622
+          }
+        },
+        "planeHeightAtCenterMeters": 912.4
+      },
+      {
+        "pitchDegrees": 2.4,
+        "azimuthDegrees": 17,
+        "stats": {
+          "areaMeters2": 24.3,
+          "sunshineQuantiles": [
+            1070,
+            1127,
+            1185,
+            1242,
+            1300,
+            1358,
+            1415,
+            1473,
+            1531,
+            1588,
+            1646
+          ],
+          "groundAreaMeters2": 24.278684771402258
+        },
+        "center": {
+          "latitude": 12.9339803,
+          "longitude": 77.6928636
+        },
+        "boundingBox": {
+          "sw": {
+            "latitude": 12.933956716437564,
+            "longitude": 77.69282433154272
+          },
+          "ne": {
+            "latitude": 12.93400382959032,
+            "longitude": 77.69290292960706
+          }
+        },
+        "planeHeightAtCenterMeters": 912.4
+      }
+    ],
+    "solarPanelConfigs": [
+      {
+        "panelsCount": 100,
+        "yearlyEnergyDcKwh": 69337,
+        "roofSegmentSummaries": [
+          {
+            "pitchDegrees": 3.1,
+            "azimuthDegrees": 197,
+            "panelsCount": 100,
+            "yearlyEnergyDcKwh": 69337,
+            "segmentIndex": 0
+          }
+        ]
+      },
+      {
+        "panelsCount": 200,
+        "yearlyEnergyDcKwh": 137747,
+        "roofSegmentSummaries": [
+          {
+            "pitchDegrees": 3.1,
+            "azimuthDegrees": 197,
+            "panelsCount": 200,
+            "yearlyEnergyDcKwh": 137747,
+            "segmentIndex": 0
+          }
+        ]
+      },
+      {
+        "panelsCount": 300,
+        "yearlyEnergyDcKwh": 205231,
+        "roofSegmentSummaries": [
+          {
+            "pitchDegrees": 3.1,
+            "azimuthDegrees": 197,
+            "panelsCount": 300,
+            "yearlyEnergyDcKwh": 205231,
+            "segmentIndex": 0
+          }
+        ]
+      },
+      {
+        "panelsCount": 400,
+        "yearlyEnergyDcKwh": 271788,
+        "roofSegmentSummaries": [
+          {
+            "pitchDegrees": 3.1,
+            "azimuthDegrees": 197,
+            "panelsCount": 400,
+            "yearlyEnergyDcKwh": 271788,
+            "segmentIndex": 0
+          }
+        ]
+      },
+      {
+        "panelsCount": 452,
+        "yearlyEnergyDcKwh": 306031,
+        "roofSegmentSummaries": [
+          {
+            "pitchDegrees": 3.1,
+            "azimuthDegrees": 197,
+            "panelsCount": 452,
+            "yearlyEnergyDcKwh": 306031,
+            "segmentIndex": 0
+          }
+        ]
+      }
+    ]
+  }
+}

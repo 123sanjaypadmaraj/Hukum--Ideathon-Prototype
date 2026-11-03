@@ -1,0 +1,158 @@
+{
+  "model": "cubicasa5k-hrnet (sample output)",
+  "image": "MB-ground-floor-scan.pdf#page=1",
+  "pixelsPerMetre": 40,
+  "imageHeightPx": 1160,
+  "rooms": [
+    {
+      "polygonPx": [
+        [
+          33,
+          35
+        ],
+        [
+          437,
+          27
+        ],
+        [
+          434,
+          444
+        ],
+        [
+          36,
+          443
+        ]
+      ],
+      "segmentationScore": 0.88,
+      "ocr": {
+        "text": "MB-LOBBY",
+        "score": 0.92
+      }
+    },
+    {
+      "polygonPx": [
+        [
+          474,
+          44
+        ],
+        [
+          875,
+          44
+        ],
+        [
+          880,
+          433
+        ],
+        [
+          489,
+          445
+        ]
+      ],
+      "segmentationScore": 0.89,
+      "ocr": {
+        "text": "MB-ADMIN",
+        "score": 0.91
+      }
+    },
+    {
+      "polygonPx": [
+        [
+          917,
+          34
+        ],
+        [
+          1762,
+          41
+        ],
+        [
+          1768,
+          447
+        ],
+        [
+          913,
+          430
+        ]
+      ],
+      "segmentationScore": 0.93,
+      "ocr": {
+        "text": "MB-LIB",
+        "score": 0.91
+      }
+    },
+    {
+      "polygonPx": [
+        [
+          45,
+          715
+        ],
+        [
+          439,
+          716
+        ],
+        [
+          438,
+          1120
+        ],
+        [
+          31,
+          1125
+        ]
+      ],
+      "segmentationScore": 0.88,
+      "ocr": {
+        "text": "MB-CCTV",
+        "score": 0.91
+      }
+    },
+    {
+      "polygonPx": [
+        [
+          916,
+          712
+        ],
+        [
+          1328,
+          718
+        ],
+        [
+          1327,
+          1114
+        ],
+        [
+          911,
+          1134
+        ]
+      ],
+      "segmentationScore": 0.89,
+      "ocr": {
+        "text": "MB-SERVER",
+        "score": 0.93
+      }
+    },
+    {
+      "polygonPx": [
+        [
+          1371,
+          716
+        ],
+        [
+          1766,
+          715
+        ],
+        [
+          1763,
+          1115
+        ],
+        [
+          1354,
+          1112
+        ]
+      ],
+      "segmentationScore": 0.93,
+      "ocr": {
+        "text": "MB-C0NF",
+        "score": 0.71
+      }
+    }
+  ]
+}

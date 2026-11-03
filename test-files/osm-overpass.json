@@ -1,0 +1,97 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API (sample)",
+  "elements": [
+    {
+      "type": "way",
+      "id": 1001,
+      "tags": {
+        "building": "college",
+        "name": "Main Block",
+        "building:levels": "3"
+      },
+      "geometry": [
+        {
+          "lat": 12.9335895,
+          "lon": 77.6925227
+        },
+        {
+          "lat": 12.933727,
+          "lon": 77.6929811
+        },
+        {
+          "lat": 12.9340038,
+          "lon": 77.6928948
+        },
+        {
+          "lat": 12.9339827,
+          "lon": 77.6928243
+        },
+        {
+          "lat": 12.9339567,
+          "lon": 77.6928324
+        },
+        {
+          "lat": 12.9338403,
+          "lon": 77.6924446
+        },
+        {
+          "lat": 12.9335895,
+          "lon": 77.6925227
+        }
+      ]
+    },
+    {
+      "type": "way",
+      "id": 1002,
+      "tags": {
+        "amenity": "college",
+        "name": "New Horizon College of Engineering"
+      },
+      "geometry": [
+        {
+          "lat": 12.9326521,
+          "lon": 77.6922364
+        },
+        {
+          "lat": 12.9333134,
+          "lon": 77.69444
+        },
+        {
+          "lat": 12.9351301,
+          "lon": 77.6938741
+        },
+        {
+          "lat": 12.9344689,
+          "lon": 77.6916705
+        },
+        {
+          "lat": 12.9326521,
+          "lon": 77.6922364
+        }
+      ]
+    },
+    {
+      "type": "way",
+      "id": 1003,
+      "tags": {
+        "highway": "trunk",
+        "name": "Outer Ring Road"
+      },
+      "geometry": [
+        {
+          "lat": 12.9324262,
+          "lon": 77.692114
+        },
+        {
+          "lat": 12.9332197,
+          "lon": 77.6947583
+        },
+        {
+          "lat": 12.9324262,
+          "lon": 77.692114
+        }
+      ]
+    }
+  ]
+}

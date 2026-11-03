@@ -1,0 +1,14 @@
+room,day,start,end,course,students
+CSE-101,MON,09:00,10:00,Data Structures,58
+CSE-101,MON,11:15,13:15,Operating Systems,55
+CSE-102,MON,09:00,11:00,Computer Networks,60
+CSE-102,MON,14:00,16:00,DBMS,52
+CSE-103,MON,10:00,12:00,Discrete Maths,57
+CSE-103,MON,14:00,15:00,Soft Skills,40
+CSE-104,MON,09:00,10:00,Compiler Design,49
+CSE-104,MON,15:00,17:00,Cloud Computing,50
+CSE-105,MON,11:15,12:15,Python Lab Theory,45
+CSE-LAB1,MON,09:00,12:00,Programming Lab (A1),34
+CSE-LAB1,MON,14:00,17:00,Programming Lab (A2),33
+CSE-LAB2,MON,10:00,13:00,Systems Lab (B1),32
+CSE-106,MON,15:00,16:00,Elective: Blockchain,38

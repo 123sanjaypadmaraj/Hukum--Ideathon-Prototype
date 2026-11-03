@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HUKUM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Inter:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; height: 100%; background: #e9dcc0; color: #2b2118; font-family: Inter, system-ui, sans-serif; overflow: hidden; }
+    :root { --S: min(100vw, 100vh); --ink: #2b2118; --ink2: #6b5a40; }
+    #brand { position: fixed; z-index: 6; pointer-events: none; color: var(--ink);
+      left: calc((100vw - var(--S)) / 2 + var(--S) * 0.035); width: calc(var(--S) * 0.27);
+      top: calc((100vh - var(--S)) / 2 + var(--S) * 0.30); }
+    #brand .name { font: 400 calc(var(--S) * 0.075)/1 'Kaushan Script', cursive; letter-spacing: .01em; }
+    #brand .rule { width: 42%; height: 2px; background: var(--ink2); opacity: .55; margin: calc(var(--S) * 0.02) 0; }
+    #brand .tag { font: 400 calc(var(--S) * 0.036)/1.25 'Kaushan Script', cursive; color: var(--ink); }
+    #brand .sub { font: 500 calc(var(--S) * 0.0145)/1.5 Inter, sans-serif; color: var(--ink2); margin-top: calc(var(--S) * 0.02); letter-spacing: .04em; text-transform: uppercase; }
+    body.title #pic, body.title #empty, body.title #change { display: none !important; }
+    body.title #brand { left: 50%; top: 50%; width: auto; transform: translate(-50%, -50%); text-align: center; }
+    body.title #brand .name { font-size: calc(var(--S) * 0.16); }
+    body.title #brand .rule { width: 30%; margin: calc(var(--S) * 0.03) auto; }
+    body.title #brand .tag { font-size: calc(var(--S) * 0.058); }
+    body.title #brand .tag br { display: none; }
+    body.title #brand .sub { font-size: calc(var(--S) * 0.018); }
+
+    /* ---- three-stage explainer ---- */
+    #story { position: fixed; inset: 0; z-index: 10; background: #e9dcc0; display: none; flex-direction: column; padding: clamp(16px, 3.2vh, 40px) clamp(18px, 5vw, 80px); box-sizing: border-box; overflow: auto; }
+    #story.on { display: flex; }
+    #story .steps { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+    #story .pill { font: 600 12px Inter, sans-serif; letter-spacing: .12em; text-transform: uppercase; color: #6b5a40; border: 1px solid #b9a77d; border-radius: 999px; padding: 8px 16px; opacity: .65; }
+    #story .pill.cur { background: #2b2118; color: #f4ead2; border-color: #2b2118; opacity: 1; }
+    #story .pill.done { opacity: 1; border-color: #6b5a40; }
+    #story .stage { flex: 1; display: flex; flex-direction: column; justify-content: center; max-width: 1180px; width: 100%; margin: 0 auto; padding: 18px 0; animation: rise .55s ease both; }
+    @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    #story .num { font: 600 13px Inter, sans-serif; letter-spacing: .2em; color: #8a5a2b; text-transform: uppercase; }
+    #story h1 { font: 400 clamp(44px, 9vh, 96px)/1.02 'Kaushan Script', cursive; margin: 6px 0 4px; }
+    #story .lede { font: 500 clamp(16px, 2.6vh, 24px)/1.4 Inter, sans-serif; color: #4a3b27; max-width: 760px; margin: 0 0 clamp(14px, 3vh, 30px); }
+    #story .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+    #story .card { background: rgba(250,243,226,.72); border: 1px solid #cdbb94; border-radius: 12px; padding: 16px 18px; }
+    #story .card b { display: block; font: 600 13px Inter, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: #8a5a2b; margin-bottom: 6px; }
+    #story .card span { font: 400 clamp(14px, 2vh, 17px)/1.45 Inter, sans-serif; color: #2b2118; }
+    #story .flow { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: clamp(16px, 3vh, 30px); }
+    #story .chip { font: 600 13px Inter, sans-serif; letter-spacing: .08em; text-transform: uppercase; background: #2b2118; color: #f4ead2; border-radius: 8px; padding: 9px 14px; }
+    #story .arrow { color: #8a5a2b; font: 700 18px Inter, sans-serif; }
+    #story .result { margin-top: clamp(14px, 2.6vh, 26px); font: 500 clamp(15px, 2.2vh, 19px)/1.4 Inter, sans-serif; color: #4a3b27; border-left: 3px solid #8a5a2b; padding-left: 14px; }
+    #story .stats { display: flex; flex-wrap: wrap; gap: 12px 34px; margin-top: clamp(14px, 2.6vh, 26px); }
+    #story .stat b { display: block; font: 400 clamp(30px, 5vh, 48px)/1 'Kaushan Script', cursive; color: #2b2118; }
+    #story .stat span { font: 500 12px Inter, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: #6b5a40; }
+    #story .foot { text-align: center; font: 500 13px Inter, sans-serif; color: #6b5a40; }
+    #story .foot kbd { font: inherit; border: 1px solid #b9a77d; border-radius: 5px; padding: 1px 7px; background: rgba(250,243,226,.8); }
+    #pic0 { position: fixed; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.05); z-index: 0; display: none; }
+    #shade0 { position: fixed; inset: 0; background: rgba(0,0,0,.38); z-index: 1; display: none; pointer-events: none; }
+    body.title #pic0, body.title #shade0 { display: block; }
+    body.title { background: #111; }
+    body.title #brand { color: #fff; z-index: 6; text-shadow: 0 2px 18px rgba(0,0,0,.55); }
+    body.title #brand .rule { background: #fff; opacity: .7; }
+    body.title #brand .tag { color: #fff; }
+    body.title #brand .sub { color: #e8e8e8; }
+    #pic { position: fixed; inset: 0; width: 100%; height: 100%; object-fit: contain; display: none; }
+    #pic2 { position: fixed; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #e9dcc0; z-index: 5; }
+    #pic2[hidden] { display: none; }
+    #empty { position: fixed; inset: 0; display: grid; place-items: center; text-align: center; padding: 24px; }
+    #empty label { border: 1px dashed #56677c; border-radius: 10px; padding: 28px 36px; cursor: pointer; color: #8a9bb0; }
+    #empty label:hover, body.drag #empty label { border-color: #69b1ff; color: #e6edf5; }
+    #empty input { display: none; }
+    #hint { position: fixed; left: 0; right: 0; bottom: 22px; text-align: center; pointer-events: none; }
+    #hint button { pointer-events: auto; font: inherit; color: #2b2118; background: rgba(250,243,226,.85); border: 1px solid #8a7a5c; border-radius: 999px; padding: 9px 22px; cursor: pointer; backdrop-filter: blur(6px); }
+    #hint button:hover { border-color: #69b1ff; }
+    #change { position: fixed; top: 14px; right: 16px; font-size: 12px; color: #5c4d36; background: rgba(250,243,226,.7); border: 0; cursor: pointer; padding: 6px 10px; border-radius: 6px; }
+    #change:hover { color: #2b2118; }
+  </style>
+</head>
+<body class="title">
+  <img id="pic0" alt="" src="assets/spectacles.png">
+  <div id="shade0"></div>
+  <img id="pic" alt="HUKUM">
+  <img id="pic2" alt="Did you switch off the light/fan?!" src="assets/start2.png" hidden>
+  <section id="story" aria-live="polite">
+    <div class="steps" id="story-steps"></div>
+    <div class="stage" id="story-stage"></div>
+    <div class="foot"><kbd>Enter</kbd> or click to continue &nbsp;&middot;&nbsp; <kbd>Backspace</kbd> to go back</div>
+  </section>
+  <div id="empty">
+    <label>Drop your picture here or click to choose it
+      <input id="file" type="file" accept="image/*">
+    </label>
+  </div>
+  <button id="change" type="button" hidden>Change picture</button>
+  <div id="brand"><div class="name">HUKUM</div><div class="rule"></div><div class="tag">My Campus,<br>My Power,<br>My Control</div><div class="sub">NHCE campus energy twin</div></div>
+  <div id="hint"><button id="go" type="button">Press Enter</button></div>
+  <input id="file2" type="file" accept="image/*" hidden>
+
+<script>
+(() => {
+  const pic = document.getElementById('pic'), empty = document.getElementById('empty'), change = document.getElementById('change');
+  const NEXT = 'scan.html';
+  let url = null;
+
+  function show(src) {
+    if (url && url.startsWith('blob:')) URL.revokeObjectURL(url);
+    url = src;
+    pic.onload = () => { pic.style.display = 'block'; empty.style.display = 'none'; change.hidden = false; };
+    pic.onerror = () => { pic.style.display = 'none'; empty.style.display = 'grid'; change.hidden = true; };
+    pic.src = src;
+  }
+
+  // IndexedDB keeps the chosen picture across refreshes.
+  const db = () => new Promise((res, rej) => {
+    const r = indexedDB.open('hukum-start', 1);
+    r.onupgradeneeded = () => r.result.createObjectStore('kv');
+    r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error);
+  });
+  const kv = async (mode, fn) => { try { const d = await db(); return await new Promise((res, rej) => { const q = fn(d.transaction('kv', mode).objectStore('kv')); q.onsuccess = () => res(q.result); q.onerror = () => rej(q.error); }); } catch { return null; } };
+
+  function take(file) {
+    if (!file || !file.type.startsWith('image/')) return;
+    kv('readwrite', (s) => s.put(file, 'pic'));
+    show(URL.createObjectURL(file));
+  }
+
+  // Order: picture saved in this browser, else a file dropped in assets/start.*
+  (async () => {
+    const saved = await kv('readonly', (s) => s.get('pic'));
+    if (saved) return show(URL.createObjectURL(saved));
+    for (const ext of ['png', 'jpg', 'jpeg', 'webp', 'gif', 'svg']) {
+      try { const r = await fetch(`assets/start.${ext}`, { method: 'HEAD' }); if (r.ok) return show(`assets/start.${ext}`); } catch {}
+    }
+  })();
+
+  document.getElementById('file').addEventListener('change', (e) => take(e.target.files[0]));
+  const f2 = document.getElementById('file2');
+  f2.addEventListener('change', (e) => take(e.target.files[0]));
+  change.addEventListener('click', () => f2.click());
+  addEventListener('dragover', (e) => { e.preventDefault(); document.body.classList.add('drag'); });
+  addEventListener('dragleave', () => document.body.classList.remove('drag'));
+  addEventListener('drop', (e) => { e.preventDefault(); document.body.classList.remove('drag'); take(e.dataTransfer.files[0]); });
+
+  // Stages: 0 name + tagline, 1 dedication, 2 "switch off the light/fan",
+  // 3-5 the SCAN > DIGITAL TWINING > AGENTIC CONTROL explainer, then the project.
+  // Enter or a click moves on; a refresh always starts again at stage 0.
+  const STORY = [
+    { name: 'Scan', lede: 'Build the building\u2019s model without a survey.',
+      cards: [['Outside', 'Satellite and map data'], ['Inside', 'Plans and a phone walk-through'], ['Loads', 'CCTV and the meter']] },
+    { name: 'Digital twining', lede: 'A live twin of the campus, updated every 15 minutes.',
+      cards: [['See', 'Cameras count who is in each room'], ['Decide', 'Solar, battery and loads balanced'], ['Prove', 'Savings checked against doing nothing']] },
+    { name: 'Agentic control', lede: 'Nine agents plan. A person approves.',
+      cards: [['Plan', 'Agents design and check'], ['Approve', 'Nothing changes without a yes'], ['Act', 'Control runs the campus']] },
+  ];
+  const esc = (t) => String(t).replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+  function renderStory(i) {
+    const d = STORY[i];
+    document.getElementById('story-steps').innerHTML = STORY.map((x, k) =>
+      `<span class="pill ${k === i ? 'cur' : k < i ? 'done' : ''}">${k + 1} &nbsp;${esc(x.name)}</span>`).join('');
+    const box = document.getElementById('story-stage');
+    box.innerHTML =
+      `<h1>${esc(d.name)}</h1><p class="lede">${esc(d.lede)}</p>` +
+      `<div class="cards">${d.cards.map((c) => `<div class="card"><b>${esc(c[0])}</b><span>${esc(c[1])}</span></div>`).join('')}</div>`;
+    box.style.animation = 'none'; void box.offsetWidth; box.style.animation = '';
+  }
+
+  // Each stage is applied from scratch, so going forward and back always agree.
+  let stage = 0;
+  function apply() {
+    document.body.classList.toggle('title', stage === 0);
+    document.getElementById('pic2').hidden = stage < 2;
+    document.getElementById('hint').hidden = stage >= 2;
+    change.hidden = stage !== 1 || pic.style.display !== 'block';
+    const story = document.getElementById('story');
+    story.classList.toggle('on', stage >= 3);
+    if (stage >= 3) renderStory(stage - 3);
+  }
+  const go = () => {
+    if (stage >= 2 + STORY.length) { location.href = NEXT; return; }
+    stage++; apply();
+  };
+  const back = () => { if (stage > 0) { stage--; apply(); } };
+  addEventListener('click', (e) => { if (!e.target.closest('#change, label, input')) go(); });
+  addEventListener('keydown', (e) => {
+    if (e.target.tagName === 'INPUT') return;
+    if (e.key === 'Enter') go();
+    else if (e.key === 'Backspace' || e.key === 'ArrowLeft') { e.preventDefault(); back(); }
+  });
+})();
+</script>
+</body>
+</html>
